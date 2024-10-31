@@ -1,0 +1,14 @@
+import os
+answer = input("Type here(Shut down, Restart or Restart with time) : ")
+def restart():
+    os.system("shutdown -r -t 1")
+def shutdown():
+    os.system("shutdown -s -t 1")
+def restart_Time():
+    os.system("shutdown -r -t 20")
+if answer == 'Shut down':
+    shutdown()
+elif answer == 'Restart':
+    restart()
+elif answer == 'Restart with time':
+    restart_Time()
